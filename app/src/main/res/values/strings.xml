@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Thrifty</string>
+    <string name="detailed_act_name">Transaction Details</string>
+    <string name="add_transaction">Add New Transaction</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="Rs">\u20B9</string>
+</resources>
