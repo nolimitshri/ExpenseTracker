@@ -4,12 +4,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity"
@@ -28,10 +27,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total Balance"
+                style="@style/TEXT"
                 android:textAllCaps="true"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:textColor="@color/black"
                 />
 
             <TextView
@@ -39,9 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="\u20B9300.95"
+                style="@style/TEXTSm"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                android:textColor="@color/textMain"
                 />
 
         </LinearLayout>
@@ -55,12 +54,14 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             app:cardCornerRadius="12dp"
+
             >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -85,7 +86,7 @@
                         android:text="Budget"
                         android:textSize="14sp"
                         android:textAllCaps="true"
-                        android:textColor="@color/textMain"/>
+                        style="@style/TEXT"/>
 
 
                 </LinearLayout>
@@ -113,7 +114,7 @@
                         android:text="Expense"
                         android:textSize="14sp"
                         android:textAllCaps="true"
-                        android:textColor="@color/textMain"
+                        style="@style/TEXT"
                         />
 
 
@@ -127,13 +128,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Transactions"
+            style="@style/TEXT"
             android:textStyle="bold"
             android:textSize="14sp"
             android:textAllCaps="true"
             android:layout_below="@id/dashboard"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="10dp"
-            android:textColor="@color/textMain"/>
+            android:layout_marginStart="10dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
@@ -149,14 +150,17 @@
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            app:backgroundTint="@color/red"
-            android:tint="@color/white"
-            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorBar"
             android:src="@drawable/ic_add"
-            android:backgroundTint="@color/button_bg"
-            app:borderWidth="0dp"/>
+            android:tint="@color/colorAttractive"
+            app:backgroundTint="@color/red"
+            app:borderWidth="0dp" />
 
 
     </RelativeLayout>

@@ -3,7 +3,7 @@
 <resources>
 
 <!--    <style name="AppTheme" -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="colorPrimary">@color/green</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -12,7 +12,7 @@
 
     </style>
 
-    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight">
         <item name="android:windowBackground">@drawable/expenses</item>
     </style>
 </resources>

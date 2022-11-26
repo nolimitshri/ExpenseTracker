@@ -46,7 +46,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/dashboard">
+            android:label="@string/dashboard"
+            >
 
 
             <meta-data
